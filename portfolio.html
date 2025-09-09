@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vasanthaakshaya A - Portfolio</title>
+  <link rel="stylesheet" href="porfolio.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: white;
+      text-align: center;
+      padding: 50px;
+    }
+
+    .skills {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .skill {
+      background: black;
+      border: 2px solid red;
+      border-radius: 10px;
+      padding: 20px 40px;
+      font-size: 20px;
+      font-weight: bold;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+      cursor: pointer;
+    }
+  </style>
+
+</head>
+<body style="font-family:Arial;text-align:center;background-color: bisque;">
+  <img src="akshaya.jpg" alt="Your Photo" style="width:120px;border-radius:50%;">
+  <h1>Vasanthaakshaya A</h1>
+  <p>IT Student | Aspiring Developer</p>
+
+  <h2>About</h2>
+  <p>Hello! I’m Vasanthaakshaya, pursuing B.Tech IT. I love coding and building projects.</p>
+
+  <h2>Projects</h2>
+  <ul style="list-style-position:inside; display:inline-block; text-align:left;">
+    <li>Mini Project 1</li>
+    <li>Mini Project 2</li>
+    <li>Mini Project 3</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>
+    <a href="akshayaarul@gmail.com">Email</a> | 
+    <a href="https://github.com/Vasanthaakshaya/akshaya_23/edit/main/README.md">GitHub</a>
+  </p>
+    <h2>My Skills</h2>
+  <div class="skills">
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">React</div>
+  </div>
+
+  <script>
+    // Select all skill elements
+    const skills = document.querySelectorAll(".skill");
+
+    skills.forEach(skill => {
+      skill.addEventListener("mouseenter", () => {
+        skill.style.transform = "scale(1.2)";
+        skill.style.borderColor = "#007bff";
+        skill.style.boxShadow = "0 8px 16px rgba(0,0,0,0.2)";
+      });
+
+      skill.addEventListener("mouseleave", () => {
+        skill.style.transform = "scale(1)";
+        skill.style.borderColor = "black";
+        skill.style.boxShadow = "none";
+      });
+    });
+  </script>
+</body>
+</html>

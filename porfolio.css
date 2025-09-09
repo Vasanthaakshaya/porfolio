@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(135deg, #4a90e2, #060564);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+header img {
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-top: 20px;
+}
+
+header h1 {
+  margin: 10px 0;
+  font-size: 2.5em;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+nav {
+  background: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #032144;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #06366d;
+  font-size: 2em;
+}
+
+.about, .skills, .projects, .contact {
+  background: white;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.skills-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.skill {
+  background: #032e5f;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.projects ul {
+  list-style: none;
+  padding: 0;
+}
+
+.projects li {
+  background: #f1f1f1;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.projects li:hover {
+  background: #e0e0e0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+  margin-top: 30px;
+}
